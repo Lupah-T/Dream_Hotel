@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <h2>Room Bookings</h2>
+  {% if bookings %}
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Room Type</th>
+        <th>From</th>
+        <th>To</th>
+      </tr>
+      {% for b in bookings %}
+        <tr>
+          <td>{{ b.name }}</td>
+          <td>{{ b.room_type }}</td>
+          <td>{{ b.date_from }}</td>
+          <td>{{ b.date_to }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>No bookings found.</p>
+  {% endif %}
+
+  <h2>Food Orders</h2>
+  {% if orders %}
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Food Items</th>
+      </tr>
+      {% for o in orders %}
+        <tr>
+          <td>{{ o.name }}</td>
+          <td>{{ o.food_items }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>No orders found.</p>
+  {% endif %}
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Order Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-900 text-white font-sans p-8">
+  <h2 class="text-3xl font-bold mb-6 text-center">Order Your Favorite Meals</h2>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <ul class="mb-4">
+        {% for category, message in messages %}
+          <li class="text-green-400">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <form method="POST" class="max-w-md mx-auto bg-gray-800 p-6 rounded-xl space-y-4">
+    <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 rounded bg-gray-700 text-white" />
+
+    <label class="block text-left mb-2 font-semibold">Select Food:</label>
+    <div class="space-y-2">
+      <label><input type="checkbox" name="food" value="Pizza" class="mr-2" /> Pizza</label><br />
+      <label><input type="checkbox" name="food" value="Burger" class="mr-2" /> Burger</label><br />
+      <label><input type="checkbox" name="food" value="Pasta" class="mr-2" /> Pasta</label><br />
+      <label><input type="checkbox" name="food" value="Sushi" class="mr-2" /> Sushi</label><br />
+      <label><input type="checkbox" name="food" value="Fried Chicken" class="mr-2" /> Fried Chicken</label>
+    </div>
+
+    <button type="submit" class="bg-yellow-400 text-black px-6 py-2 rounded hover:bg-yellow-300">Place Order</button>
+  </form>
+</body>
+</html>
+

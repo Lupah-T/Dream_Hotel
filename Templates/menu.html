@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classy Bites | Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-gray-800">
+    <h1 class="text-2xl font-bold">Classy Bites</h1>
+    <ul class="flex gap-6">
+ <li><a href="/index" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="/menu" class="hover:text-yellow-400">Menu</a></li>
+      <li><a href="/book" class="hover:text-yellow-400">Book Room</a></li>
+      <li><a href="/order" class="text-yellow-400">Order Food</a></li>
+      <li><a href="/about" class="hover:text-yellow-400">About</a></li>
+      <li><a href="/contact" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-10">
+    <h2 class="text-4xl font-bold">Our Delicious Menu</h2>
+    <p class="text-lg text-gray-400 mt-2">Carefully prepared dishes to satisfy every craving</p>
+  </header>
+
+  <!-- Food Grid -->
+  <section class="px-10 pb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- Dish Card Template -->
+    <!-- You can copy this block and just change name/image/price -->
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1606788075761-3e63137e4b8a?auto=format&fit=crop&w=800&q=80" alt="Burger" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Classic Cheeseburger</h3>
+        <p class="text-gray-400 text-sm">Grilled beef, cheese, lettuce, and house sauce.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$8.99</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1604908177523-472dfb5be7f8?auto=format&fit=crop&w=800&q=80" alt="Pizza" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Pepperoni Pizza</h3>
+        <p class="text-gray-400 text-sm">Stone-baked with mozzarella, pepperoni, and herbs.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$10.99</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Steak" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Grilled Steak</h3>
+        <p class="text-gray-400 text-sm">Tender steak with garlic butter and veggies.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$17.50</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=800&q=80" alt="Chicken Wings" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Spicy Chicken Wings</h3>
+        <p class="text-gray-400 text-sm">Crispy, spicy, and served with creamy dip.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$7.99</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1599785209707-28f4e8b34ee4?auto=format&fit=crop&w=800&q=80" alt="Sushi" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Salmon Sushi Rolls</h3>
+        <p class="text-gray-400 text-sm">Fresh salmon, rice, seaweed, and avocado.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$14.25</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb30?auto=format&fit=crop&w=800&q=80" alt="Pasta" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Creamy Alfredo Pasta</h3>
+        <p class="text-gray-400 text-sm">Rich cream sauce with parmesan and chicken.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$12.00</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1543353071-087092ec393f?auto=format&fit=crop&w=800&q=80" alt="Salad" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Greek Salad</h3>
+        <p class="text-gray-400 text-sm">Feta cheese, olives, cucumbers, and tomatoes.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$6.49</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1510626176961-4bfb7aa0c8d3?auto=format&fit=crop&w=800&q=80" alt="Tacos" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Street Tacos</h3>
+        <p class="text-gray-400 text-sm">Soft tortillas with beef, cilantro, and lime.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$9.00</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1579916076040-29aa0c1e3645?auto=format&fit=crop&w=800&q=80" alt="Ice Cream" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Vanilla Ice Cream</h3>
+        <p class="text-gray-400 text-sm">Silky vanilla ice cream topped with syrup.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$4.25</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+      <img src="https://images.unsplash.com/photo-1603034998462-9816c2c3e1f1?auto=format&fit=crop&w=800&q=80" alt="Juice" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-semibold">Fresh Orange Juice</h3>
+        <p class="text-gray-400 text-sm">Cold-pressed and vitamin-packed refreshment.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">$3.50</span>
+          <button class="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Add</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
+
